@@ -1,6 +1,5 @@
 # GMail Notification
 
-Simple overview of use/purpose.
 a simple backend program to send an email notification
 
 ## Description
