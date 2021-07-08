@@ -3,16 +3,16 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'anemail@gmail.com', //not a real email addres
-        pass: 'apassword' //not a real password
+        user: 'sendersemail@gmail.com', //not a real email addres
+        pass: 'senderspassword' //not a real password
     }
 });
 
 const mailOptions = {
-    from: 'anemail@gmail.com',
-    to: 'endlessu.paradox@gmail.com',
-    subject: 'Sending Email using Nodejs',
-    text: 'That was easy!'
+    from: 'sendersemail@gmail.com',
+    to: 'receiversemail@gmail.com',
+    subject: `here's an email notification`,
+    text: 'your account was logged in'
 };
 
 transporter.sendMail(mailOptions, (err, info) => {
