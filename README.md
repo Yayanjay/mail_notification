@@ -1,16 +1,15 @@
-# mail_notification
+# GMail Notification
 
 Simple overview of use/purpose.
 a simple backend program to send an email notification
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
 this program allow us to receive an email notification for a multi-purpose. The default notification is to know our current login status. The flows are,
 1. start
-2. user login to the app
-3. the app will catch user's credential (email&password)
-4. when the login button/trigger button clicked, program will be running and send a notification to user's email
+2. program needs the credentials of senders gmail account
+3. program need to know where the notofication/message might send
+4. program needs to know what is thw content of the notification (can be costumized)
 5. if it got succeed, there will be an email notification
 6. if not, program failed
 7. end
@@ -25,20 +24,18 @@ this program allow us to receive an email notification for a multi-purpose. The 
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* How/where to download the program?
+* to try the program, type "git clone https://github.com/Yayanjay/mail_notification.git" in your command line
+```
+git clone https://github.com/Yayanjay/mail_notification.git
+```
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* How to run the program?
+* before running the program you should change the sender's credentials and change the reciever's email
+* you might change the notification message too if you want
+* and then, to run the program, go to your command line and type "node send_mail.js"
 ```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
+node send_mail.js
 ```
